@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(88 ,24, 69);
+}
+
+#title{
+  color: rgb(199, 0, 57);
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button{
+  margin: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(255, 195, 0);
+  color: rgb(255, 255, 255);
+}
