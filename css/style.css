@@ -58,10 +58,10 @@ html,body{
 
 @@media screen and (max-width: 384px) {
   .content h1{
-    font-size: 400%;
+    font-size: 500%;
   }
   .btn{
-    font-size: 170%;
+    font-size: 300%;
     padding: 5px 10px;
   }
 }
