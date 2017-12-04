@@ -56,12 +56,12 @@ html,body{
   border: solid #990033 2px;
 }
 
-/*@@media screen and (max-width: 768px) {
+@@media screen and (max-width: 384px) {
   .content h1{
-    font-size: 200%;
+    font-size: 400%;
   }
   .btn{
-    font-size: 100%;
+    font-size: 170%;
     padding: 5px 10px;
   }
-}*/
+}
