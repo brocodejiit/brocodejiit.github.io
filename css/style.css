@@ -1,30 +1,67 @@
-body{
-  background-color: rgb(88 ,24, 69);
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(250 ,250, 250);
+  font-size: 16px;
 }
 
-#title{
-  color: rgb(199, 0, 57);
-  font-family: 'Pacifico', cursive;
-  text-align: center;
+.intro{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/Elegant_Background-3.jpg');
+  display: table;
+  top: 0;
+  background-size: cover;
 }
 
-.flex-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.button{
-  margin: 10px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(255, 0, 0);
-  border-radius: 10px;
-  text-align: center;
+.intro .inner{
+  display: table-cell;
   vertical-align: middle;
-  line-height: 150px;
-  height: 150px;
-  width: 150px;
-  background-color: rgb(255, 195, 0);
-  color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: none;
+}
+
+.content{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1{
+  font-family: 'Pacifico' ,cursive;
+  color: #990033;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 300%
+}
+
+.btn{
+  border-radius: 9px;
+  font-family: 'Oswald' ,sans-serif;
+  color: #ffcc00;
+  font-size: 145%;
+  padding: 7px 15px;
+  border: solid #ffcc00 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  color: #990033;
+  border: solid #990033 2px;
+}
+
+@@media screen and (max-width: 768px) {
+  .content h1{
+    font-size: 200%;
+  }
+  .btn{
+    font-size: 100%;
+    padding: 5px 10px;
+  }
 }
