@@ -14,7 +14,8 @@ html,body{
   height: 100%;
   width: 100%;
   margin: auto;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/Elegant_Background-3.jpg');
+  /*background: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/Elegant_Background-3.jpg');*/
+  background: rgb(255, 240, 240);
   display: table;
   top: 0;
   background-size: cover;
@@ -28,7 +29,7 @@ html,body{
 }
 
 .content{
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -56,25 +57,12 @@ html,body{
   border: solid #990033 2px;
 }
 
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 768px) {
   .content h1{
-    font-size: 200%;
+    font-size: 500%;
   }
   .btn{
-    font-size: 100%;
+    font-size: 200%;
     padding: 5px 10px;
   }
-}
-
-@media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3) {
-    .content h1{
-      font-size: 900%;
-    }
-    .btn{
-      font-size: 550%;
-      padding: 7px 14px;
-    }
-}
+}*/
