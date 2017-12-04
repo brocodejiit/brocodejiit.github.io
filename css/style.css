@@ -72,6 +72,7 @@ html,body{
   and (-webkit-device-pixel-ratio: 3) {
     .content h1{
       font-size: 900%;
+      color: white;
     }
     .btn{
       font-size: 550%;
