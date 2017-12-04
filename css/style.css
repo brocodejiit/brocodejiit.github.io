@@ -71,10 +71,10 @@ html,body{
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 3) {
     .content h1{
-      font-size: 700%;
+      font-size: 900%;
     }
     .btn{
-      font-size: 400%;
-      padding: 5px 10px;
+      font-size: 550%;
+      padding: 7px 14px;
     }
 }
