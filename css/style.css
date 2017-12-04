@@ -59,6 +59,7 @@ html,body{
 @@media screen and (max-width: 384px) {
   .content h1{
     font-size: 500%;
+    color: white;
   }
   .btn{
     font-size: 300%;
