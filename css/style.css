@@ -6,22 +6,62 @@ html,body{
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(250 ,250, 250);
+  background-color: rgb(0 ,0, 0);
   font-size: 16px;
 }
 
-.intro{
-  height: 100%;
+.updates{
+  display: flex;
+  flex-direction: row;
+}
+
+.u_title{
+  border-radius: 15px;
+  font-family: 'Oswald' ,sans-serif;
+  color: #672E3B;
+  background-color: #fff;
+  font-size: 100%;
+  padding: 7px 15px;
+  border: solid #fff 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 10px;
+  position: relative;
+  z-index: 5;
+}
+
+.u_text{
+  border-radius: 15px;
+  font-family: 'Oswald' ,sans-serif;
+  color: #005960;
+  width: 67%;
+  background-color: #fff;
+  font-size: 100%;
+  padding: 3px 8px;
+  border: solid #fff 2px;
+  text-decoration: none;
+  position: relative;
+  z-index: 4;
+  padding-left: 20px;
+  margin-left: -20px;
+
+}
+
+.s1{
+  height: 75%;
   width: 100%;
   margin: auto;
-  /*background: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/Elegant_Background-3.jpg');*/
   background: rgb(255, 240, 240);
   display: table;
   top: 0;
   background-size: cover;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  z-index: 5;
+  margin-top: -25px;
 }
 
-.intro .inner{
+.s1 .inner,.s2 .inner{
   display: table-cell;
   vertical-align: middle;
   width: 100%;
@@ -29,7 +69,7 @@ html,body{
 }
 
 .content{
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   text-align: center;
 }
@@ -39,6 +79,19 @@ html,body{
   color: #990033;
   /*text-shadow: 0px 0px 300px #000;*/
   font-size: 400%;
+}
+
+.s2{
+  height: 30%;
+  width: 100%;
+  margin: auto;
+  background: rgb(220, 240, 240);
+  display: table;
+  background-size: cover;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  margin-top: -25px;
+  z-index: 4;
 }
 
 .btn{
@@ -55,6 +108,12 @@ html,body{
 .btn:hover{
   color: #990033;
   border: solid #990033 2px;
+}
+
+@media screen and (max-width: 768px) {
+  body,html{
+    width: 100%;
+  }
 }
 
 /*@media screen and (max-width: 768px) {
