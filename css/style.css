@@ -10,9 +10,11 @@ html,body{
   font-size: 16px;
 }
 
-.updates{
+.inner .updates{
   display: flex;
   flex-direction: row;
+  max-width: 98%;
+  margin-left: 1%;
 }
 
 .u_title{
@@ -20,33 +22,33 @@ html,body{
   font-family: 'Oswald' ,sans-serif;
   color: #672E3B;
   background-color: #fff;
-  font-size: 100%;
+  font-size: 110%;
   padding: 7px 15px;
   border: solid #fff 2px;
   text-decoration: none;
   text-transform: uppercase;
-  margin-left: 10px;
   position: relative;
   z-index: 5;
 }
 
 .u_text{
-  border-radius: 15px;
+  border-radius: 0px 15px 15px 0px;
   font-family: 'Oswald' ,sans-serif;
   color: #005960;
-  width: 72%;
+  width: 100%;
+  padding: 7px 7px;
   background-color: #fff;
   font-size: 100%;
-  padding: 3px 8px;
   border: solid #fff 2px;
   text-decoration: none;
   position: relative;
   z-index: 4;
-  padding-left: 20px;
-  margin-left: -20px;
-
+  margin-left: -15px;
 }
 
+.u_text a{
+
+}
 .s1{
   height: 75%;
   width: 100%;
@@ -61,7 +63,7 @@ html,body{
   margin-top: -25px;
 }
 
-.s1 .inner,.s2 .inner{
+.s1 .inner,.s2 .inner,.s3 .inner{
   display: table-cell;
   vertical-align: middle;
   width: 100%;
@@ -82,7 +84,7 @@ html,body{
 }
 
 .s2{
-  height: 30%;
+  height: 35%;
   width: 100%;
   margin: auto;
   background: rgb(220, 240, 240);
@@ -92,6 +94,19 @@ html,body{
   position: relative;
   margin-top: -25px;
   z-index: 4;
+}
+
+.s3{
+  height: 35%;
+  width: 100%;
+  margin: auto;
+  background: #F7786B;
+  display: table;
+  background-size: cover;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  margin-top: -25px;
+  z-index: 3;
 }
 
 .btn{
@@ -108,12 +123,6 @@ html,body{
 .btn:hover{
   color: #990033;
   border: solid #990033 2px;
-}
-
-@media screen and (max-width: 768px) {
-  body,html{
-    width: 100%;
-  }
 }
 
 /*@media screen and (max-width: 768px) {
