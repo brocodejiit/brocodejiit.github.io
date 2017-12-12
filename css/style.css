@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 html,body{
   margin: 0;
@@ -28,7 +29,7 @@ html,body{
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
-  z-index: 5;
+  z-index: 6;
 }
 
 .u_text{
@@ -42,32 +43,29 @@ html,body{
   border: solid #fff 2px;
   text-decoration: none;
   position: relative;
-  z-index: 4;
+  z-index: 5;
   margin-left: -15px;
 }
 
-.u_text a{
-
-}
-.s1{
-  height: 75%;
-  width: 100%;
-  margin: auto;
-  background: rgb(255, 240, 240);
-  display: table;
-  top: 0;
-  background-size: cover;
-  border-radius: 0px 0px 30px 30px;
-  position: relative;
-  z-index: 5;
-  margin-top: -25px;
-}
-
-.s1 .inner,.s2 .inner,.s3 .inner{
+.s1 .inner,.s2 .inner,.s3 .inner,.s4 .inner,.end .inner{
   display: table-cell;
   vertical-align: middle;
   width: 100%;
   max-width: none;
+}
+
+.s1{
+  height: 78%;
+  width: 100%;
+  margin: auto;
+  background: #ffe9ec url("img/titlebg.png") no-repeat;
+  background-size: 100% 100%;
+  display: table;
+  top: 0;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  z-index: 6;
+  margin-top: -25px;
 }
 
 .content{
@@ -79,6 +77,8 @@ html,body{
 .content h1{
   font-family: 'Pacifico' ,cursive;
   color: #990033;
+  position: relative;
+  z-index: 6;
   /*text-shadow: 0px 0px 300px #000;*/
   font-size: 400%;
 }
@@ -87,13 +87,13 @@ html,body{
   height: 35%;
   width: 100%;
   margin: auto;
-  background: rgb(220, 240, 240);
+  background: #d6f3f9;
   display: table;
   background-size: cover;
   border-radius: 0px 0px 30px 30px;
   position: relative;
   margin-top: -25px;
-  z-index: 4;
+  z-index: 5;
 }
 
 .s3{
@@ -106,7 +106,43 @@ html,body{
   border-radius: 0px 0px 30px 30px;
   position: relative;
   margin-top: -25px;
+  z-index: 4;
+}
+
+.s4{
+  height: 65%;
+  width: 100%;
+  margin: auto;
+  background: #005960;
+  display: table;
+  background-size: cover;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  margin-top: -25px;
   z-index: 3;
+}
+
+.end{
+  height: 10%;
+  width: 100%;
+  margin: auto;
+  background: #672E3B;
+  display: table;
+  background-size: cover;
+  position: relative;
+  margin-top: -25px;
+  z-index: 2;
+}
+
+.end .inner .content{
+margin-top: 25px;
+}
+
+.content h6{
+  margin-top: 40px;
+  font-size: 60%;
+  color: white;
+  font-family: 'Abel', sans-serif;
 }
 
 .btn{
