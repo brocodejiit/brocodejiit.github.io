@@ -63,7 +63,7 @@ html,body{
 }
 
 .s1{
-  height: 75%;
+  height: 70%;
   width: 100%;
   margin: auto;
   background: #ffe9ec url("img/titlebg.png") no-repeat;
@@ -135,6 +135,12 @@ html,body{
   color: #0A3009;
   font-size: 200%;
   margin-bottom: 0;
+}
+
+.s4 h2{
+  font-family: 'Oswald' ,sans-serif;
+  color: #0A3009;
+  font-size: 120%;
 }
 
 .s4 form{

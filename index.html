@@ -50,14 +50,17 @@
       <div class="inner">
         <div class="content">
           <h1>CONTACT US</h1>
+          <div style="display:none;" id="thankyou_message">
+            <h2>Thanks for contacting us!</h2>
+          </div>
           <div class="form">
-            <form name="contactform" action="mailto:kna.clashofclans@gmail.com?sunject=BCCjiit" method="post" enctype="text/plain">
+            <form id="gform" action="https://script.google.com/macros/s/AKfycbyEG7NHA36SrAwYvIdn4IQRxvDe8-Jgxh5dUz-W7z7XGzqtoUU/exec" method="post" enctype="text/plain">
               Name:<br>
-              <input type="text" name="name" placeholder="  full name"><br>
+              <input type="text" id="name "name="name" placeholder="  full name"><br>
               E-mail:<br>
-              <input type="text" name="mail" placeholder="  email address"><br>
+              <input type="text" id="email "name="email" placeholder="  email address"><br>
               Comment:<br>
-              <textarea name="comments" placeholder="we value postive as well negative feedbacks ;)"></textarea><br><br>
+              <textarea id="message"name="message" placeholder="we value postive as well negative feedbacks ;)"></textarea><br><br>
               <input type="submit" value="Send">
               <input type="reset" value="Reset">
             </form>
@@ -72,5 +75,6 @@
         </div>
       </div>
     </section>
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js" ></script>
   </body>
 </html>
