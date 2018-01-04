@@ -115,6 +115,7 @@ html,body{
   position: relative;
   margin-top: -25px;
   z-index: 4;
+  display: none;
 }
 
 .s4{
