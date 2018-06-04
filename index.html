@@ -10,6 +10,8 @@
 
       gtag('config', 'UA-110557041-1');
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/switch.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BroCode Community</title>
@@ -32,42 +34,75 @@
           <img src="css/img/title.png"></img>
         </div>
     </section>
-    <section class="s2">
-      <div class="inner">
-        <div class="content">
-          <a class="btn" href="https://drive.google.com/open?id=0B9coh7TQwvtdUHpSVmdmaUhFOUU">BroDrive</a>
-        </div>
-      </div>
-    </section>
-    <section class="s3">
-      <div class="inner">
-        <div class="content">
-          <a class="btn">+ComingSoon</a>
-        </div>
-      </div>
-    </section>
-    <section class="s4">
-      <div class="inner">
-        <div class="content">
-          <h1>CONTACT US</h1>
-          <div style="display:none;" id="thankyou_message">
-            <h2>Thanks for contacting us!</h2>
+    <div class="bigbox">
+      <section class="s2">
+        <div class="inner">
+          <div class="content">
+            <a class="btn" href="https://drive.google.com/open?id=0B9coh7TQwvtdUHpSVmdmaUhFOUU">BroDrive</a>
           </div>
-          <div class="form">
-            <form id="gform" action="https://script.google.com/macros/s/AKfycbyEG7NHA36SrAwYvIdn4IQRxvDe8-Jgxh5dUz-W7z7XGzqtoUU/exec" method="post" enctype="text/plain">
-              Name:<br>
-              <input type="text" id="name "name="name" placeholder="  full name"><br>
-              E-mail:<br>
-              <input type="text" id="email "name="email" placeholder="  email address"><br>
-              Comment:<br>
-              <textarea id="message"name="message" placeholder="we value postive as well negative feedbacks ;)"></textarea><br><br>
-              <input type="submit" value="Send">
-              <input type="reset" value="Reset">
-            </form>
         </div>
+      </section>
+      <section class="s3">
+        <div class="inner">
+          <section class="switch">
+            <div class="register">
+              <a class="sbtn">Register</a>
+            </div>
+            <div class="contact">
+              <a class="sbtn" id="contactbtn">Contact Us</a>
+            </div>
+          </section>
+          <div class="content">
+            <h1>BRODRIVE REGISTRATION</h1>
+            <div style="display:none;" id="thankyou_message">
+              <h2>Thanks for Registration!</h2>
+            </div>
+            <div class="form">
+              <form id="gform" action="https://script.google.com/macros/s/AKfycbyEG7NHA36SrAwYvIdn4IQRxvDe8-Jgxh5dUz-W7z7XGzqtoUU/exec" method="post" enctype="text/plain">
+                Name:<br>
+                <input type="text" id="name "name="name" placeholder="  Full Name"><br>
+                E-mail:<br>
+                <input type="text" id="email "name="email" placeholder="  Email Address"><br>
+                Info:<br>
+                <textarea id="message"name="message" placeholder=" Batch and Semester Number"></textarea><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+              </form>
+          </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="s4">
+        <div class="inner">
+          <section class="switch">
+            <div class="register">
+              <a class="sbtn" id="registerbtn">Register</a>
+            </div>
+            <div class="contact">
+              <a class="sbtn">Contact Us</a>
+            </div>
+          </section>
+          <div class="content">
+            <h1>CONTACT US</h1>
+            <div style="display:none;" id="thankyou_message">
+              <h2>Thanks for contacting us!</h2>
+            </div>
+            <div class="form">
+              <form id="gform" action="https://script.google.com/macros/s/AKfycbyEG7NHA36SrAwYvIdn4IQRxvDe8-Jgxh5dUz-W7z7XGzqtoUU/exec" method="post" enctype="text/plain">
+                Name:<br>
+                <input type="text" id="name "name="name" placeholder="  Full name"><br>
+                E-mail:<br>
+                <input type="text" id="email "name="email" placeholder="  Email address"><br>
+                Comment:<br>
+                <textarea id="message"name="message" placeholder="We value postive as well negative feedbacks ;)"></textarea><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+              </form>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <section class="end">
       <div class="inner">
         <div class="content">

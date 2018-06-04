@@ -48,32 +48,37 @@ html,body{
   margin-left: -15px;
 }
 
-.s1 .inner{
-  display: table-cell;
-  vertical-align: top;
+.bigbox{
+  position: relative;
+  height: 100%;
   width: 100%;
-  max-width: none;
+  display: table;
 }
 
-.s2 .inner,.s3 .inner,.s4 .inner,.end .inner{
+.s1.inner,.s2 .inner,.s3 .inner,.s4 .inner,.end .inner{
   display: table-cell;
   vertical-align: middle;
   width: 100%;
   max-width: none;
 }
 
+.s1,.s2,.s3,.s4,.end{
+  margin: auto;
+  background-size: cover;
+  display: table;
+  position: relative;
+  margin-top: -25px;
+  border-radius: 0px 0px 30px 30px;
+}
+
 .s1{
   height: 50%;
   width: 100%;
-  margin: auto;
   background: #ffe9ec url("img/titlebg.png") no-repeat;
   background-size: 100%;
-  display: table;
   top: 0;
-  border-radius: 0px 0px 30px 30px;
-  position: relative;
-  z-index: 6;
-  //margin-top: -25px;
+  margin-top: 0px;
+  z-index: 999;
 }
 
 .content{
@@ -91,65 +96,46 @@ html,body{
   max-width: 100%;
 }
 
+
 .s2{
   height: 35%;
   width: 100%;
-  margin: auto;
   background: #d6f3f9;
-  display: table;
   background-size: cover;
-  border-radius: 0px 0px 30px 30px;
-  position: relative;
-  margin-top: -25px;
   z-index: 5;
 }
 
-.s3{
-  height: 35%;
-  width: 100%;
-  margin: auto;
-  background: #F7786B;
-  display: table;
-  background-size: cover;
-  border-radius: 0px 0px 30px 30px;
-  position: relative;
-  margin-top: -25px;
-  z-index: 4;
-  display: none;
-}
-
-.s4{
+.s4,.s3{
   height: 70%;
   width: 100%;
-  margin: auto;
   background: #50924F;
-  display: table;
-  background-size: cover;
-  border-radius: 0px 0px 30px 30px;
-  position: relative;
   margin-top: -25px;
   z-index: 3;
 }
 
-.s4 h1{
+.s4{
+  display: none;
+}
+
+.s3 h1,.s4 h1{
   font-family: 'Oswald' ,sans-serif;
   color: #0A3009;
   font-size: 200%;
   margin-bottom: 0;
 }
 
-.s4 h2{
+.s3 h2,.s4 h2{
   font-family: 'Oswald' ,sans-serif;
   color: #0A3009;
   font-size: 120%;
 }
 
-.s4 form{
+.s3 form,.s4 form{
   font-family: 'Oswald' ,sans-serif;
   color: #0A3009;
 }
 
-.s4 input[type=text]{
+.s3 input[type=text],.s4 input[type=text]{
   background: #D6E9D5;
   border: none;
   border-radius: 5px;
@@ -158,7 +144,7 @@ html,body{
   padding: 3px;
   margin: 5px;
 }
-.s4 input[type=submit] ,.s4 input[type=reset]{
+.s3 input[type=submit] ,.s3 input[type=reset],.s4 input[type=submit] ,.s4 input[type=reset]{
   background: #D6E9D5;
   color: #0A3009;
   border: none;
@@ -167,7 +153,7 @@ html,body{
   border-radius: 10px;
 }
 
-.s4 textarea{
+.s3 textarea,.s4 textarea{
   background: #D6E9D5;
   border: none;
   border-radius: 5px;
@@ -181,13 +167,10 @@ html,body{
 .end{
   height: 10%;
   width: 100%;
-  margin: auto;
   background: #672E3B;
-  display: table;
-  background-size: cover;
-  position: relative;
-  margin-top: -25px;
-  z-index: 2;
+  border-radius: 0px 0px 0px 0px;
+  margin-top: -40px;
+  z-index: -999;
 }
 
 .end .inner .content{
@@ -234,18 +217,64 @@ margin-top: 25px;
   border: solid #990033 2px;
 }
 
+.switch{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -55px;
+}
+
+.switch .sbtn{
+  border: none;
+  font-family: 'Oswald' ,sans-serif;
+  font-size: 150%;
+}
+.switch .sbtn:hover{
+  color: #990033;
+}
+
+.register,.contact{
+  padding-top: 25px;
+  padding-bottom: 15px;
+  height: 100%;
+  width: 50%;
+  margin-top: -50px;
+  background-size: cover;
+  text-align: center;
+}
+
+.register{
+  background: #50924F;
+}
+
+.contact{
+  background: rgb(125,125,0);
+}
+
 @media screen and (min-width: 768px) {
   .s1{
     background: #ffe9ec;
+    margin-top: -25px;
+  }
+  .bigbox{
+    display: flex;
+    min-height: 450px;
+    max-height: 65%;
+  }
+  .s2,.s3,.s4{
+    min-height: 100%; 
+    width: 100%;
+    border-radius: 0px 0px 0px 30px;
+  }
+  .s3,.s4{
+    border-radius: 0px 0px 30px 0px;
+  }
+  .s2 .button{
+    font-size: 400%;
+  }
+  .end{
+    margin-top: -45px;
   }
 }
 
-/*@media screen and (max-width: 768px) {
-  .content h1{
-    font-size: 500%;
-  }
-  .btn{
-    font-size: 200%;
-    padding: 5px 10px;
-  }
-}*/
+
