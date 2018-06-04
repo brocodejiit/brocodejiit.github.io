@@ -234,13 +234,17 @@ margin-top: 25px;
 }
 
 .register,.contact{
-  padding-top: 25px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   height: 100%;
   width: 50%;
   margin-top: 0px;
   background-size: cover;
   text-align: center;
+}
+
+.switch a{
+  text-anchor: middle x="50%" y="50%";
 }
 
 .register{
