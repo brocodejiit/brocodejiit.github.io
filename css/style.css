@@ -53,6 +53,7 @@ html,body{
   height: 100%;
   width: 100%;
   display: table;
+  margin-top: -25px;
 }
 
 .s1.inner,.s2 .inner,.s3 .inner,.s4 .inner,.end .inner{
@@ -221,7 +222,6 @@ margin-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 0%;
 }
 
 .switch .sbtn{
@@ -234,11 +234,10 @@ margin-top: 25px;
 }
 
 .register,.contact{
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 10px;
   height: 100%;
   width: 50%;
-  margin-top: 0px;
   background-size: cover;
   text-align: center;
 }
@@ -273,7 +272,6 @@ margin-top: 25px;
     font-size: 400%;
   }
   .switch{
-    margin-top: 5%;
   }
   .end{
     margin-top: -45px;
