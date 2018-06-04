@@ -221,7 +221,7 @@ margin-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: -25%;
+  margin-top: 0%;
 }
 
 .switch .sbtn{
@@ -273,7 +273,7 @@ margin-top: 25px;
     font-size: 400%;
   }
   .switch{
-    margin-top: -5%;
+    margin-top: 5%;
   }
   .end{
     margin-top: -45px;
