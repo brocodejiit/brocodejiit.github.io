@@ -272,6 +272,9 @@ margin-top: 25px;
   .s2 .button{
     font-size: 400%;
   }
+  .switch{
+    margin-top: 10px;
+  }
   .end{
     margin-top: -45px;
   }
