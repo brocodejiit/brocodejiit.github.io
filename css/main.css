@@ -8,7 +8,7 @@ body{
 	background: #66a5ad;
 	margin: 0;
 	text-align: center;
-	color: #F1F0CC;
+	color: #F1F1F2;
 }
 
 .content-wrapper{
@@ -23,7 +23,7 @@ body{
 	width: 98%;
 	margin-left: 1%;
 	margin-top: 10px;
-	background: #F1F0CC;
+	background: #F1F1F2;
 	color: #003b46;
 	font-family: 'Oswald' ,sans-serif;
 	border-radius: 30px;
@@ -72,7 +72,7 @@ body{
 #title{
 	background: #66a5ad;
   	background-size: 100%;
-  	padding-top: 60px;
+  	padding-top: 50px;
 }
 #title .content-wrapper{
 	/*background: #ffe9ec url("img/titlebg.png") no-repeat;*/
@@ -126,8 +126,8 @@ body{
 }
 
 #switch{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #btn-reg{
@@ -147,59 +147,59 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .sbtn{
-  border: none;
-  font-family: 'Oswald' ,sans-serif;
-  font-size: 150%;
+  	border: none;
+  	font-family: 'Oswald' ,sans-serif;
+  	font-size: 150%;
 }
 .sbtn:hover{
-  color: #990033;
+  	color: #990033;
 }
 
 #card-reg h1, h1{
-  font-family: 'Oswald' ,sans-serif;
-  /*color: #0A3009;*/
-  font-size: 200%;
-  margin-bottom: 0;
+  	font-family: 'Oswald' ,sans-serif;
+  	/*color: #0A3009;*/
+  	font-size: 200%;
+  	margin-bottom: 0;
 }
 
 #card-reg h2,#card-cont h2{
-  font-family: 'Oswald' ,sans-serif;
-  /*color: #0A3009;*/
-  font-size: 120%;
+  	font-family: 'Oswald' ,sans-serif;
+  	/*color: #0A3009;*/
+  	font-size: 120%;
 }
 
 #card-reg form,#card-cont form{
-  font-family: 'Oswald' ,sans-serif;
-  /*color: #0A3009;*/
+  	font-family: 'Oswald' ,sans-serif;
+  	/*color: #0A3009;*/
 }
 
 #card-reg input[type=text],#card-cont input[type=text]{
-  background: #D6E9D5;
-  border: none;
-  border-radius: 5px;
-  color: #0A3009;
-  width:250px;
-  padding: 3px;
-  margin: 5px;
+ 	 background: #D6E9D5;
+  	border: none;
+  	border-radius: 5px;
+  	color: #0A3009;
+  	width:250px;
+  	padding: 3px;
+  	margin: 5px;
 }
 #card-reg input[type=submit] ,#card-reg input[type=reset],#card-cont input[type=submit] ,#card-cont input[type=reset]{
-  background: #D6E9D5;
-  color: #0A3009;
-  border: none;
-  padding: 5px 8px;
-  margin: 6px;
-  border-radius: 10px;
+  	background: #D6E9D5;
+  	color: #0A3009;
+  	border: none;
+  	padding: 5px 8px;
+  	margin: 6px;
+  	border-radius: 10px;
 }
 
 #card-reg textarea,#card-cont textarea{
-  background: #D6E9D5;
-  border: none;
-  border-radius: 5px;
-  color: #0A3009;
-  margin: 5px;
-  padding: 3px;
-  width:250px;
-  height:50px;
+  	background: #D6E9D5;
+  	border: none;
+  	border-radius: 5px;
+  	color: #0A3009;
+  	margin: 5px;
+  	padding: 3px;
+  	width:250px;
+  	height:50px;
 }
 
 /*--------------------------Footer-------------------------*/
