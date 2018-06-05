@@ -1,18 +1,18 @@
 $(document).ready(function(){
-    $("#contactbtn").click(function(){
-        $(".s4").css("display", "table");
-        $(".s3").css("display", "none");
-        var rcolor = $(".register").css("background");
-        var ccolor = $(".contact").css("background");
-        $(".contact").css("background", rcolor);
-        $(".register").css("background", ccolor);
+    $("#btn-cont").click(function(){
+        $("#card-cont").css("display", "block");
+        $("#card-reg").css("display", "none");
+        var rcolor = $("#card-reg").css("background");
+        var ccolor = $("#card-cont").css("background");
+        $("#card-cont").css("background", rcolor);
+        $("#card-reg").css("background", ccolor);
     });
-    $("#registerbtn").click(function(){
-        $(".s4").css("display", "none");
-        $(".s3").css("display", "table");
-        var rcolor = $(".register").css("background");
-        var ccolor = $(".contact").css("background");
-        $(".contact").css("background", rcolor);
-        $(".register").css("background", ccolor);
+    $("#btn-reg").click(function(){
+        $("#card-cont").css("display", "none");
+        $("#card-reg").css("display", "block");
+        var rcolor = $("#card-reg").css("background");
+        var ccolor = $("#card-cont").css("background");
+        $("#card-cont").css("background", rcolor);
+        $("#card-reg").css("background", ccolor);
     });
 });
