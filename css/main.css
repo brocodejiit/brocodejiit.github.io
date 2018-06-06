@@ -298,4 +298,7 @@ body{
 	.title-text:hover{
 		transform: rotateY(360deg);
 	}
+	.title-text{
+		transition-delay: 0s;
+	}
 }
