@@ -1,5 +1,4 @@
-var form;
-
+switchform = document.getElementById("regform");
 
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -18,6 +17,7 @@ function validateHuman(honeypot) {
 // get all data in form and return object
 function getFormData() {
   // var form = document.getElementById("regform");
+  var form = switchform;
   var elements = form.elements; // all form elements
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
@@ -84,7 +84,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
         //document.getElementById('regform').style.display = 'none';
-        form.style.display = 'none'; // hide form
+        switchform.style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
         return;
     };
@@ -113,7 +113,9 @@ function loaded() {
   var regbtn = document.getElementById('regbtn');
   var contbtn = document.getElementById('contbtn');
 
-  regbtn.addEventListener("click", switcher1(), false);
+  // regbtn.addEventListener("click", switcher1(), false);
+  // contbtn.addEventListener("click",switcher2(),false);
+  regbtn.addEventListener("click", handleFormSubmit, false);
   contbtn.addEventListener("click",switcher2(),false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
