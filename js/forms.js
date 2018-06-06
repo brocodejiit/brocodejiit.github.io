@@ -1,3 +1,5 @@
+var form;
+
 
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -15,7 +17,7 @@ function validateHuman(honeypot) {
 
 // get all data in form and return object
 function getFormData() {
-  var form = document.getElementById("gformreg");
+  // var form = document.getElementById("regform");
   var elements = form.elements; // all form elements
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
@@ -81,7 +83,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
-        document.getElementById('gformreg').style.display = 'none'; // hide form
+        //document.getElementById('regform').style.display = 'none';
+        form.style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
         return;
     };
@@ -92,10 +95,26 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.send(encoded);
   }
 }
+
+function switcher(num){
+  if(num==1){
+    form=document.getElementById('regform');
+    handleFormSubmit();
+  }
+  else if(num==2){
+    form=document.getElementById('contform');
+    handleFormSubmit();
+  }
+}
+
 function loaded() {
   console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
-  var form = document.getElementById('gformreg');
-  form.addEventListener("submit", handleFormSubmit, false);
+  // var form = document.getElementById('regform');
+  var regbtn = document.getElementById('regbtn');
+  var contbtn = document.getElementById('contbtn');
+
+  regbtn.addEventListener("click", switcher(1), false);
+  contbtn.addEventListener("click",switcher(2),false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
