@@ -15,7 +15,7 @@ function validateHuman(honeypot) {
 
 // get all data in form and return object
 function getFormData() {
-  var form = document.getElementById("gform");
+  var form = document.getElementById("gformreg");
   var elements = form.elements; // all form elements
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
@@ -81,7 +81,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
-        document.getElementById('gform').style.display = 'none'; // hide form
+        document.getElementById('gformreg').style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
         return;
     };
@@ -95,7 +95,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 function loaded() {
   console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
-  var form = document.getElementById('gform');
+  var form = document.getElementById('gformreg');
   form.addEventListener("submit", handleFormSubmit, false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
