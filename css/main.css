@@ -162,17 +162,17 @@ body{
 	background: #66a5ad;
 	border-radius: 0px 0px 12px 12px;
 	position: relative;
-	top: -10px;
+	top: -5px;
 	z-index: 0;
 	animation-name: s2-in;
-	animation-delay: 600ms;
-	animation-duration: 1.5s;
+	animation-delay: 700ms;
+	animation-duration: 1000ms;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 
 @keyframes s2-in {
-	0%{top: -10px;}
+	0%{top: -5px;}
 	100%{top: 0px;}
 }
 
@@ -269,6 +269,8 @@ body{
 }
 
 
+/*Media Queries*/
+
 @media screen and (min-width: 768px) {
 	#merge{
 		display: grid;
@@ -289,5 +291,11 @@ body{
 	#footer{
 		background: #66a5ad;
 		color: #F1F0CC;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.title-text:hover{
+		transform: rotateY(360deg);
 	}
 }
