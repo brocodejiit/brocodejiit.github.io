@@ -234,16 +234,7 @@ body{
   	margin: 5px;
 }
 
-/*#card-reg input[type=submit] ,#card-reg input[type=reset],#card-cont input[type=submit] ,#card-cont input[type=reset]{
-  	background: #F1F1F2;
-  	color: #0A3009;
-  	border: none;
-  	padding: 5px 8px;
-  	margin: 6px;
-  	border-radius: 10px;
-}*/
-
-#card-reg input[type=button] ,#card-reg input[type=reset]{
+#card-reg input[type=button] ,#card-reg input[type=reset],#card-cont input[type=button] ,#card-cont input[type=reset]{
   	background: #F1F1F2;
   	color: #0A3009;
   	border: none;
