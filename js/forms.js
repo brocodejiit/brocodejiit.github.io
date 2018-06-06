@@ -1,4 +1,4 @@
-switchform = document.getElementById("regform");
+var switchform = document.getElementById("regform");
 
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -85,7 +85,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log(xhr.responseText);
         //document.getElementById('regform').style.display = 'none';
         switchform.style.display = 'none'; // hide form
-        document.getElementById('thankyou_message').style.display = 'block';
+        document.getElementById('thankyou_message1').style.display = 'block';
+        document.getElementById('thankyou_message2').style.display = 'block';
         return;
     };
     // url encode form data for sending as post data
@@ -96,26 +97,26 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   }
 }
 
-function switcher1(event){
-  form=document.getElementById('regform');
-  handleFormSubmit;
+function switcher1(){
+  switchform=document.getElementById('regform');
 }
 
-function switcher2(event){
-  form=document.getElementById('contform');
-  handleFormSubmit;
+function switcher2(){
+  switchform=document.getElementById('contform');
 }
 
 function loaded() {
   console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
   // var form = document.getElementById('regform');
-  var regbtn = document.getElementById('regbtn');
-  var contbtn = document.getElementById('contbtn');
+  var regsub = document.getElementById('regsub');
+  var contsub = document.getElementById('contsub');
 
-  // regbtn.addEventListener("click", switcher1(), false);
-  // contbtn.addEventListener("click",switcher2(),false);
-  regbtn.addEventListener("click", handleFormSubmit, false);
-  contbtn.addEventListener("click",switcher2(),false);
+  document.getElementById('btn-reg').addEventListener("click",switcher1,false); 
+  document.getElementById('btn-cont').addEventListener("click",switcher2,false);        
+
+  regsub.addEventListener("click",handleFormSubmit, false);
+  contsub.addEventListener("click",handleFormSubmit,false);
+
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
