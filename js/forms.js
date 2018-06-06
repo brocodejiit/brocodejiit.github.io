@@ -96,15 +96,14 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   }
 }
 
-function switcher(num){
-  if(num==1){
-    form=document.getElementById('regform');
-    handleFormSubmit();
-  }
-  else if(num==2){
-    form=document.getElementById('contform');
-    handleFormSubmit();
-  }
+function switcher1(event){
+  form=document.getElementById('regform');
+  handleFormSubmit;
+}
+
+function switcher2(event){
+  form=document.getElementById('contform');
+  handleFormSubmit;
 }
 
 function loaded() {
@@ -114,7 +113,7 @@ function loaded() {
   var regbtn = document.getElementById('regbtn');
   var contbtn = document.getElementById('contbtn');
 
-  regbtn.addEventListener("click", switcher(1), false);
-  contbtn.addEventListener("click",switcher(2),false);
+  regbtn.addEventListener("click", switcher1(), false);
+  contbtn.addEventListener("click",switcher2(),false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
