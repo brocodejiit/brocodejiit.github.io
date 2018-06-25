@@ -1,18 +1,22 @@
 $(document).ready(function(){
     $("#btn-cont").click(function(){
+        //display exchange
         $("#card-cont").css("display", "block");
         $("#card-reg").css("display", "none");
-        var rcolor = $("#card-reg").css("background");
-        var ccolor = $("#card-cont").css("background");
-        $("#card-cont").css("background", rcolor);
-        $("#card-reg").css("background", ccolor);
+        //opacity exchange
+        var ropacity = $("#btn-reg").css("opacity");
+        var copacity = $("#btn-cont").css("opacity");
+        $("#btn-cont").css("opacity", ropacity);
+        $("#btn-reg").css("opacity", copacity);
     });
     $("#btn-reg").click(function(){
+        //display exchange
         $("#card-cont").css("display", "none");
         $("#card-reg").css("display", "block");
-        var rcolor = $("#card-reg").css("background");
-        var ccolor = $("#card-cont").css("background");
-        $("#card-cont").css("background", rcolor);
-        $("#card-reg").css("background", ccolor);
+        //opacity exchange
+        var ropacity = $("#btn-reg").css("opacity");
+        var copacity = $("#btn-cont").css("opacity");
+        $("#btn-cont").css("opacity", ropacity);
+        $("#btn-reg").css("opacity", copacity);
     });
 });

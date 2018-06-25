@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,700');
+
+@font-face {
+  font-family: 'floorlightregular';
+  src: url('../fonts/floorlight-webfont.woff2') format('woff2'), url('../fonts/floorlight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
