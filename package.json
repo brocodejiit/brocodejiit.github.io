@@ -1,0 +1,22 @@
+{
+  "name": "brocodejiit.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brocodejiit/brocodejiit.github.io.git"
+  },
+  "author": "mrStark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brocodejiit/brocodejiit.github.io/issues"
+  },
+  "homepage": "https://github.com/brocodejiit/brocodejiit.github.io#readme",
+  "dependencies": {
+    "workbox-sw": "^4.2.0"
+  }
+}
