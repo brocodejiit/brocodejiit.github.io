@@ -1,4 +1,4 @@
-importScripts('https://github.com/brocodejiit/brocodejiit.github.io/blob/master/node_modules/workbox-sw/build/workbox-sw.js');
+importScripts('./node_modules/workbox-sw/build/workbox-sw.js');
 
 const staticAssests = [
   './',
