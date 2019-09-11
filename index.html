@@ -23,97 +23,99 @@
 		<h2>Closed For Ever</h2>
 		<h5><a>https://drive.google.com/open?id=0B9coh7TQwvtdUHpSVmdmaUhFOUU</a></h5>
 	</div>
-	<!-- Updates -->
-	<section id="updates" class="grid">
-		<div class="content-wrapper">
-			<div id="updates-text">Updates</div>
-			<div id="updates-info" class="marquee">
-				<span><a id="textread"></a></span>
-			</div>
-			<script type="text/javascript" src="js/read.js"></script>
-		</div>
-	</section>
-
-	<!-- Title -->
-	<section id="title" class="grid">
-		<div class="content-wrapper">
-			<div id="bcc-title1" class="title-text">Bro Code</div>
-			<div id="bcc-title2" class="title-text">Community</div>
-		</div>
-	</section>
-
-	<div id="merge">
-		<!-- Section1 -->
-		<section id="s1" class="grid">
+	<div class="no-display">
+		<!-- Updates -->
+		<section id="updates" class="grid">
 			<div class="content-wrapper">
-				<a class="btn" href="https://drive.google.com/open?id=0B9coh7TQwvtdUHpSVmdmaUhFOUU">BroDrive</a>
+				<div id="updates-text">Updates</div>
+				<div id="updates-info" class="marquee">
+					<span><a id="textread"></a></span>
+				</div>
+				<script type="text/javascript" src="js/read.js"></script>
 			</div>
 		</section>
-
-		<!-- Section2 -->
-		<section id="s2" class="grid">
+	
+		<!-- Title -->
+		<section id="title" class="grid">
 			<div class="content-wrapper">
-				<div id="switch">
-					<a id="btn-reg" class="sbtn">Register</a>
-					<a id="btn-cont" class="sbtn">Contact Us</a>
+				<div id="bcc-title1" class="title-text">Bro Code</div>
+				<div id="bcc-title2" class="title-text">Community</div>
+			</div>
+		</section>
+	
+		<div id="merge">
+			<!-- Section1 -->
+			<section id="s1" class="grid">
+				<div class="content-wrapper">
+					<a class="btn" href="https://drive.google.com/open?id=0B9coh7TQwvtdUHpSVmdmaUhFOUU">BroDrive</a>
 				</div>
-
-				<!-- Registration card -->
-
-				<div id="card-reg">
-					<h1>BRODRIVE REGISTRATION</h1>
-	            	<div style="display:none;" id="thankyou_message1">
-	              		<h2>Thanks for Registration!</h2>
-	            	</div>
-	            	<div class="form">
-	              		<form id="regform" name="regform" action="https://script.google.com/macros/s/AKfycbwqHbk-DZGc_X1LvKGkHhx1dNb2bC87CsrJum7l/exec" method="post" enctype="text/plain">
-	              			Name:<br>
-	              			<input type="text" id="Name_rg"name="Name_rg" placeholder="  Full Name"><br>
-	              			E-mail:<br>
-	              			<input type="text" id="Email_rg"name="Email_rg" placeholder="  Email Address"><br>
-	              			Info:<br>
-	              			<textarea id="Batch"name="Batch" placeholder=" Batch and Semester Number"></textarea><br><br>
-	              			<input id="regsub" type="submit" value="Send">
-	              			<input type="reset" value="Reset">
-	             		</form>
-	            	</div>
+			</section>
+	
+			<!-- Section2 -->
+			<section id="s2" class="grid">
+				<div class="content-wrapper">
+					<div id="switch">
+						<a id="btn-reg" class="sbtn">Register</a>
+						<a id="btn-cont" class="sbtn">Contact Us</a>
+					</div>
+	
+					<!-- Registration card -->
+	
+					<div id="card-reg">
+						<h1>BRODRIVE REGISTRATION</h1>
+		            	<div style="display:none;" id="thankyou_message1">
+		              		<h2>Thanks for Registration!</h2>
+		            	</div>
+		            	<div class="form">
+		              		<form id="regform" name="regform" action="https://script.google.com/macros/s/AKfycbwqHbk-DZGc_X1LvKGkHhx1dNb2bC87CsrJum7l/exec" method="post" enctype="text/plain">
+		              			Name:<br>
+		              			<input type="text" id="Name_rg"name="Name_rg" placeholder="  Full Name"><br>
+		              			E-mail:<br>
+		              			<input type="text" id="Email_rg"name="Email_rg" placeholder="  Email Address"><br>
+		              			Info:<br>
+		              			<textarea id="Batch"name="Batch" placeholder=" Batch and Semester Number"></textarea><br><br>
+		              			<input id="regsub" type="submit" value="Send">
+		              			<input type="reset" value="Reset">
+		             		</form>
+		            	</div>
+					</div>
+	
+					<!-- Contact Card -->
+	
+					<div id="card-cont">
+						<h1>CONTACT US</h1>
+		            	<div style="display:none;" id="thankyou_message2">
+		              		<h2>Thanks for contacting us!</h2>
+		            	</div>
+		            	<div class="form">
+		              		<form id="contform" name="contform" action="https://script.google.com/macros/s/AKfycbw_k-cuWlWBrhA8GyVUTANxRzoKxCi6RQ3k2IUT3Q/exec" method="post" enctype="text/plain">
+		                		Name:<br>
+		                		<input type="text" id="Name_fb "name="Name_fb" placeholder="  Full name"><br>
+		                		E-mail:<br>
+		                		<input type="text" id="Email_fb "name="Email_fb" placeholder="  Email address"><br>
+		                		Comment:<br>
+		                		<textarea id="Feedback"name="Feedback" placeholder="We value postive as well negative feedbacks ;)"></textarea><br><br>
+		                		<input id="contsub" type="submit" value="Send">
+		                		<input type="reset" value="Reset">
+		              		</form>
+		          		</div>
+					</div>
+	
+					<!-- Google Forms Script -->
+					<script data-cfasync="false" type="text/javascript" src="js/forms.js" ></script>
+	
 				</div>
-
-				<!-- Contact Card -->
-
-				<div id="card-cont">
-					<h1>CONTACT US</h1>
-	            	<div style="display:none;" id="thankyou_message2">
-	              		<h2>Thanks for contacting us!</h2>
-	            	</div>
-	            	<div class="form">
-	              		<form id="contform" name="contform" action="https://script.google.com/macros/s/AKfycbw_k-cuWlWBrhA8GyVUTANxRzoKxCi6RQ3k2IUT3Q/exec" method="post" enctype="text/plain">
-	                		Name:<br>
-	                		<input type="text" id="Name_fb "name="Name_fb" placeholder="  Full name"><br>
-	                		E-mail:<br>
-	                		<input type="text" id="Email_fb "name="Email_fb" placeholder="  Email address"><br>
-	                		Comment:<br>
-	                		<textarea id="Feedback"name="Feedback" placeholder="We value postive as well negative feedbacks ;)"></textarea><br><br>
-	                		<input id="contsub" type="submit" value="Send">
-	                		<input type="reset" value="Reset">
-	              		</form>
-	          		</div>
-				</div>
-
-				<!-- Google Forms Script -->
-				<script data-cfasync="false" type="text/javascript" src="js/forms.js" ></script>
-
+			</section>
+		</div>
+	
+		<!-- Footer -->
+		<section id="footer" class="grid">
+			<div id="content-wrapper">
+				Bro Code Community 2019
 			</div>
 		</section>
 	</div>
-
-	<!-- Footer -->
-	<section id="footer" class="grid">
-		<div id="content-wrapper">
-			Bro Code Community 2019
-		</div>
-	</section>
-	<script type="text/javascript" src="app.js"></script>
+	<!-- <script type="text/javascript" src="app.js"></script> -->
 </body>
 </html>
 

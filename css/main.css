@@ -18,7 +18,7 @@ body {
 }
 
 .closed{
-	position: fixed;
+	position: absolute;
 	top: 0%;
 	background: #003b46;
 	color: #c1dee7;
@@ -28,6 +28,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.no-display{
+	display: none;
 }
 
 /*-------------------------Updates-------------------------*/
